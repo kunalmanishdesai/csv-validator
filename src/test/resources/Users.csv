@@ -1,0 +1,7 @@
+Email,Phone Number,Birth Date,First Name,Last Name
+john.doe@gmail.com,7718093321,01/01/1990,John,Doe
+john###.doe@gmail.com,7718093321,01/01/1990,John,Doe
+john.doe@gmail.com,771809332.1,01/01/1990,John,Doe
+john.doe@gmail.com,7718093321,21/01/1990,John,Doe
+john.doe@gmail.com,7718093321,01/01/1990,Joh#n,Doe
+johnas.donte@gmail.com,7718094421,01/02/1990,Johnas,Donte
