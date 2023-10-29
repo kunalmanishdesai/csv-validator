@@ -17,9 +17,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-    env:
-      USERNAME: ${{ secrets.USERNAME }}
-      PASSWORD: ${{ secrets.PASSWORD }}
 
     steps:
       - uses: actions/checkout@v3
@@ -28,14 +25,12 @@ jobs:
         with:
           java-version: '18'
           distribution: 'zulu'
-          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-          settings-path: ${{ github.workspace }} # location for the settings.xml file
+          server-id: ossrh
+          server-username: ${{ secrets.USERNAME }}
+          server-password: ${{ secrets.PASSWORD }}
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
-
-      - name: print settings.xml
-        run: cat settings.xml
 
       - name: Publish to GitHub Packages Apache Maven
         run: mvn deploy -s settings.xml
