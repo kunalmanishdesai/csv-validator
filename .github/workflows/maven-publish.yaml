@@ -17,6 +17,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+    env:
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
 
     steps:
       - uses: actions/checkout@v3
@@ -36,6 +39,3 @@ jobs:
 
       - name: Publish to GitHub Packages Apache Maven
         run: mvn deploy -s settings.xml
-        env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
