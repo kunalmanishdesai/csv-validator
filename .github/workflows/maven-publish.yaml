@@ -4,6 +4,9 @@
 name: Maven Package
 
 on:
+
+#  should be removed after testing
+  push:
   release:
     types: [created]
 
