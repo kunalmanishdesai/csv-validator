@@ -10,6 +10,28 @@
   <name>csv-validator</name>
   <url>http://maven.apache.org</url>
 
+  <description>
+    This parser can be used to parse csv and validate individual records.
+    It returns successful, failed and all records present in file.
+    It also states why the records were failed.
+  </description>
+
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>https://github.com/kunalmanishdesai/csv-validator/blob/main/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>kunalmanishdesai</id>
+      <name>Kunal Desai</name>
+      <email>kunalmanishdesai@gmail.com</email>
+    </developer>
+  </developers>
+
   <scm>
     <connection>scm:git:https://github.com/kunalmanishdesai/csv-validator.git</connection>
     <developerConnection>scm:git:https://github.com/kunalmanishdesai/csv-validator.git</developerConnection>
